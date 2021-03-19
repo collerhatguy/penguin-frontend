@@ -62,7 +62,7 @@ input[type="file"] {
   padding-top: 0.35rem;
 }
 
-textarea.input {
+input {
   resize: vertical;
 }
 
