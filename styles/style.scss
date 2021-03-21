@@ -1,0 +1,87 @@
+
+
+$inputBorder: #8b8a8b;
+$inputFocusHue: 245;
+$inputFocusS: 100%;
+$inputFocusL: 42%;
+
+@mixin centerMargin($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@import "./form";
+@import "./summary";
+
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {  
+	@include centerMargin(60%);
+	height: 100%;
+}
+
+h1 {	
+	text-align: center;
+	font-size: 40px;
+}
+
+img {
+	@include centerMargin(60%);
+	display: block;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    img {
+        @include centerMargin(80%);
+        display: block;
+    }
+
+	form {
+		margin: 0 20%;
+	}
+
+	.summary-data {
+		display: block;
+        @include centerMargin(80%);
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+  	    width: 100%;
+    }
+
+    img {
+        @include centerMargin(80%);
+        display: block;
+    }
+
+    form {
+        margin: 0 10%;
+    }
+
+    .summary-data {
+        display: block;
+        @include centerMargin(100%);
+    }
+
+    #penguin-summary {
+        padding-bottom: 100px;
+        @include centerMargin(90%);
+    }
+}

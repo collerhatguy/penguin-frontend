@@ -1,0 +1,63 @@
+
+form {
+	margin: 0 30%;
+
+}
+
+input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid $inputBorder;
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+input:focus {
+  border-color: hsl(
+    $inputFocusHue,
+    $inputFocusS,
+    $inputFocusL
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      $inputFocusHue,
+      $inputFocusS,
+      $inputFocusL + 40%,
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+input {
+  resize: vertical;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+input + label {
+  margin-top: 2rem;
+}
+
+#submit{
+	width: 30%;
+	margin-top: 20px;
+}

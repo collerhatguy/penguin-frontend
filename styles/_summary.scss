@@ -1,0 +1,34 @@
+
+b {
+	text-align: right;
+}
+
+ul li {
+	list-style-type: none;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#penguin-summary{
+	padding-bottom: 100px;
+}
+
+.summary {
+	margin: 0 auto;
+}
+
+.description{ 
+	/*width: 80%;*/
+	margin: 0 auto;
+}
+
+.summary-data {
+	display: block;
+	@include centerMargin(60%);
+}
+
+.summary-data li {
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 20px;
+}
